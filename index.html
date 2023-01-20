@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoomLand</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Container -->
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div>
+        <h1><strong>Boom</strong>Land</h1>
+      </div>
+      <div class="search">
+        <form>
+          <div class="input-container">
+            <input type="text" placeholder="Search Hotels" />
+          </div>
+          <div>
+            <button> <i class="fa-solid fa-magnifying-glass"> </i></button>
+          </div>
+        </form>
+      </div>
+      <div class="menu">
+        <ul class="nav-menu">
+          <li>
+            <a onclick="closeMenu()" href="#listings" class="nav-link">Listing</a>
+          </li>
+          <li>
+            <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+          </li>
+          <li>
+            <a onclick="closeMenu()" href="#featured" class="nav-link"> 
+            <h4> HOT! </h4></a>
+          </li>
+        </ul>
+        <div onclick="mobileMenu()" class="mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- Sort Bar -->
+    <div class="sort-bar">
+
+      <div>
+        <a href="#featured"><i class="fa-solid fa-house-chimney"></i>
+        <p>Accommodation</p></a>
+      </div>
+      <div>
+        <a href="#featured" ><i class="fa-solid fa-snowflake"></i>
+        <i class="fa-solid fa-sun"></i>
+        <p>Seasons</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-star"></i>
+        <p>Resort</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-tree"></i>
+        <p>Country</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-building"></i>
+        <p>City</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-campground"></i>
+        <p>Camping</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-umbrella-beach"></i>
+        <p>Beach</p></a>
+      </div>
+      <div>
+        <a href="#featured"><i class="fa-solid fa-champagne-glasses"></i>
+        <p>Entertainment</p></a>
+      </div>
+  
+    </div>
+    <!-- End Sort Bar -->
+
+
+    <!-- Listings -->
+    <div id="listings" class="listings">
+      <!-- Propert Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 870w"
+          alt="/"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p> <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Bali</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$70 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 870w"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Turkey</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=800"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Bali</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=800"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Bali</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=800"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Greece</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Seychelles</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Turkey</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Egypt</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">China</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Greece</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1554647286-f365d7defc2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Italy</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+      <!-- Property Card -->
+      <div class="card">
+        <a href="http://yandex.ru" target="_blank"><img
+          src="https://images.unsplash.com/photo-1586611292717-f828b167408c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="house"
+        /></a>
+        <div>
+          <div class="card-title">
+            <h4>SUN, Resort</h4>
+            <p><font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+              <font color="gold"><i class="fa-solid fa-star"></i></font>
+            </p>
+          </div>
+          <p><span class="grey">Canary Islands</span></p>
+          <p><span class="grey">Jun 1 - 7</span></p>
+          <p>$100 night</p>
+        </div>
+      </div>
+    </div>
+    <!-- Listings End -->
+
+    <div id="featured" class="featured">
+      <div class="title">
+        <h1> <span class="colortext">HOT OFFER! </span></h1>
+      </div>
+      <div class="featured-wrapper">
+        <div class="main">
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1615460549969-36fa19521a4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1559741033-d85618ce7e8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1585551897231-77fe523c288a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1564574685150-74a84d02d695?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div id="popular" class="featured">
+      <div class="title">
+        <h1>Popular</h1>
+      </div>
+      <div class="featured-wrapper">
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1578774204375-826dc5d996ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1561409037-c7be81613c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU2fHxob3RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div class="main">
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1556715371-bdb0d523c870?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1614957004131-9e8f2a13123c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+        <div>
+          <a href="http://yandex.ru" target="_blank"><img
+            src="https://images.unsplash.com/photo-1569157087866-f4a8e9250605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU4fHxob3RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <div class="center">
+      <a href="#top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <ul class="left-menu">
+        <li>
+          <a href="#top">BoomLand</a>
+        </li>
+        <li>
+          <a href="#top">Privacy</a>
+        </li>
+        <li>
+          <a href="#top">Terms</a>
+        </li>
+        <li>
+          <a href="#top">Destinations</a>
+        </li>
+      </ul>
+      <ul class="right-menu">
+        <li><a href="#top" >Support</a></li>
+        <li><a href="#top">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End of container -->
+
+</body>
+
+</html>
